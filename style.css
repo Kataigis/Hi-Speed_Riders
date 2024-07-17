@@ -10,6 +10,8 @@ header {
   color: white;
   min-height: 50vh;
   padding: 0px;
+  position: static;
+  top: 0;
 }
 
 .main-heading {
