@@ -10,14 +10,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#03fca1">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <meta content="Hi-Speed Riders" property="og:title" />
     <meta content="gotta go fast" property="og:description" />
     <meta content="https://kataigis.github.io/Hi-Speed_Riders/" property="og:url" />
     <meta content="favicon.ico" property="og:image" />
-    <meta content="#03fca1" data-react-helmet="true" name="theme-color" />
+    <meta content="#5fef77" data-react-helmet="true" name="theme-color" />
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -29,34 +30,121 @@
 </head>
 <body>
     <nav class="navbar sticky-top d-flex">
-        <a class="navbar-brand" href="https://google.com" target="_blank"><img src="images/discord.png" height="50vh" width="50vh"></a>
         <div class="justify-content-end">
             <ul class="nav nav-pills px-2">
-                <li class="nav-item px-1"><a class="nav-link active" id="homebtn">Home</a></li>
-                <li class="nav-item px-1"><a class="nav-link" id="corebtn">Core Ratios</a></li>
-                <li class="nav-item px-1 dropdown" id="menu">
-                    <a class="nav-link dropdown-toggle" id="enginebtn" role="button" aria-expanded="false">Engines</a>
+                <li class="nav-item p-1"><a class="nav-link active" id="btn_home">Home</a></li>
+                <li class="nav-item p-1"><a class="nav-link" id="btn_core">Archetypal Cards</a></li>
+                <li class="nav-item p-1 dropdown" id="menu">
+                    <a class="nav-link dropdown-toggle" id="btn_generics" role="button" aria-expanded="false">Generic Techs</a>
                     <ul class="dropdown-menu" id="list" role="menu">
-                        <li><a class="dropdown-item" id="evolbtn">Evol</a></li>
-                        <li><a class="dropdown-item" id="raikabtn">Ragnaraika</a></li>
-                        <li><a class="dropdown-item" id="annebtn">Reptilianne</a></li>
+                        <li><a class="dropdown-item" id="btn_g_main">Main Deck</a></li>
+                        <li><a class="dropdown-item" id="btn_g_extra">Extra Deck</a></li>
+                    </ul>
+                <li class="nav-item p-1 dropdown" id="menu">
+                    <a class="nav-link dropdown-toggle" id="btn_engines" role="button" aria-expanded="false">Engines</a>
+                    <ul class="dropdown-menu" id="list" role="menu">
+                        <li><a class="dropdown-item" id="btn_e_gunity">Dragunity</a></li>
+                        <li><a class="dropdown-item" id="btn_e_kash">Kashtira</a></li>
+                        <li><a class="dropdown-item" id="btn_e_machina">Machina</a></li>
+                        <li><a class="dropdown-item" id="btn_e_symph">Symphonic</a></li>
                     </ul>
                 </li>
-                <li class="nav-item px-1"><a class="nav-link" id="techbtn">Techs</a></li>
-                <li class="nav-item px-1"><a class="nav-link" id="listbtn">Sample Decklists</a></li>
-                <li class="nav-item px-1"><a class="nav-link" id="combobtn">Sample Combos</a></li>
+                <li class="nav-item p-1 dropdown" id="menu">
+                    <a class="nav-link dropdown-toggle" id="btn_variants" role="button" aria-expanded="false">Variants</a>
+                    <ul class="dropdown-menu" id="list" role="menu">
+                        <li><a class="dropdown-item" id="btn_v_dragon">Armed Dragon</a></li>
+                        <li><a class="dropdown-item" id="btn_v_wasp">Battlewasp</a></li>
+                        <li><a class="dropdown-item" id="btn_v_magnet">KaijuMagnet</a></li>
+                        <li><a class="dropdown-item" id="btn_v_kash">Kashtira</a></li>
+                        <li><a class="dropdown-item" id="btn_v_symph">Symphonic</a></li>
+                        <li><a class="dropdown-item" id="btn_v_trap">Trap</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-1"><a class="nav-link" id="btn_lists">Deckbuilding Resources</a></li>
+                <li class="nav-item p-1"><a class="nav-link" id="btn_combos">Sample Combos</a></li>
+                <li class="nav-item p-1"><a class="nav-link" id="btn_md">Master Duel</a></li>
+                <li class="nav-item p-1"><a class="nav-link" id="btn_discussions">Discussion Topics</a></li>
             </ul>
         </div>
     </nav>
     <div class="main-content">
-        <div id="homecontent" class="tabContent">
+        <div id="content_home" class="tabContent">
             <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <p>how to reshape the primordial tehom in 3 easy steps! hieratics HATE this trick!</p>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-8">
+                    <p>UNDER CONSTRUCTION</p>
+                    <ul>
+                        <li>home</li>
+                        <li>
+                            archetypal cards
+                            <ul>
+                                <li>ratios</li>
+                                <li>explanations</li>
+                                <li>card information pop-ups</li>
+                            </ul>
+                        </li>
+                        <li>
+                            generics
+                            <ul>
+                                <li>
+                                    main deck
+                                    <ul>
+                                        <li>ratios</li>
+                                        <li>explanations</li>
+                                        <li>card info popups</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    extra deck
+                                    <ul>
+                                        <li>ratios</li>
+                                        <li>explanations</li>
+                                        <li>card info popups</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            engines
+                            <ul>
+                                <li>figure out what's worth running</li>
+                            </ul>
+                        </li>
+                        <li>
+                            variants
+                            <ul>
+                                <li>figure out what's worth running</li>
+                            </ul>
+                        </li>
+                        <li>deck core</li>
+                        <li>
+                            sample lists
+                            <ul>
+                                <li>does kinda require that variants be figured out first in order to actually finish</li>
+                            </ul>
+                        </li>
+                        <li>
+                            sample combos
+                            <ul>
+                                <li>figure out how to showcase these</li>
+                            </ul>
+                        </li>
+                        <li>master duel info</li>
+                        <li>
+                            discussion topics
+                            <ul>
+                                <li>see if any existing topics are worth keeping</li>
+                                <li>see if there's any new ones that deserve space</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <iframe src="https://discord.com/widget?id=799202339629039626&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </div>
             </div>
         </div>
-        <div id="corecontent" class="tabContent" style="display:none">
+        <div id="content_core" class="tabContent" style="display:none">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <p>The archetypal stuff</p>
@@ -68,10 +156,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/nunu.png" width="100%"/>
+                                    <img src="arts/speedroid_block-n-roll.png" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>3x Nunu</h4>
+                                    <h4>0x Block-n-Roll</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -83,27 +171,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/nauya.jpg" width="100%"/>
+                                    <img src="arts/speedroid_carturbo.png" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>3x Nauya</h4>
-                                    <p>sample text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="card mon border-dark">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/flogos.png" width="100%"/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>0-1x Flogos</h4>
+                                    <h4>0x CarTurbo</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -115,27 +186,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/zohah.png" width="100%"/>
+                                    <img src="arts/missing_art.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>1x Zohah</h4>
-                                    <p>sample text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="card mon border-dark">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/keurse.png" width="100%"/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>1x Keurse</h4>
+                                    <h4>0x Clackernel</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -147,27 +201,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/aleirtt.png" width="100%"/>
+                                    <img src="arts/speedroid_den-den_daiko_duke.png" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>0-1x Aleirtt</h4>
-                                    <p>sample text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="card mon border-dark">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/aron.png" width="100%"/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>0-1x Aron</h4>
+                                    <h4>0x Den-Den Daiko Duke</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -179,27 +216,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/amun.jpg" width="100%"/>
+                                    <img src="arts/speedroid_dominobutterfly.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>0-1x Amunessia</h4>
-                                    <p>sample text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="card mon border-dark">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/ogdoabyss.jpg" width="100%"/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>0-1x Ogdoabyss</h4>
+                                    <h4>0x Dominobutterfly</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -211,27 +231,310 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/neph.jpg" width="100%"/>
+                                    <img src="arts/speedroid_double_yoyo.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>1x Nephilabyss</h4>
+                                    <h4>0x Double Yoyo</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_fuki-modoshi_piper.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Fuki-Modoshi Piper</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_gum_prize.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Gum Prize</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_hexasaucer.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Hexasaucer</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_horse_stilts.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Horse Stilts</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_maliciousmagnet.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Maliciousmagnet</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_marble_machine.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Marble Machine</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_menko.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Menko</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_ohajikid.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Ohajikid</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_pachingo-kart.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Pachingo-Kart</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_passinglider.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Passinglider</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_razorang.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Razorang</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_red-eyed_dice.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Red-Eyed Dice</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_rubberband_plane.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Rubberband Plane</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_skull_marbles.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Skull Marbles</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_taketomborg.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Taketomborg</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_terrortop.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Terrortop</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_tri-eyed_dice.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Tri-Eyed Dice</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_ultra_hound.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Ultra Hound</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card mon border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/missing_art.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Wing Synchron</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-5">
                     <div class="card spell border-dark">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/daybreak.jpg" width="100%"/>
+                                    <img src="arts/hi-speed_re-level.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>1-3x Daybreak</h4>
+                                    <h4>0x Hi-Speed Re-Level</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -243,27 +546,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/origin.jpg" width="100%"/>
+                                    <img src="arts/shock_surprise.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>0x Origin</h4>
-                                    <p>sample text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="card spell border-dark">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/strike.png" width="100%"/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>0-3x Serpent Strike</h4>
+                                    <h4>0x Shock Surprise</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -275,27 +561,70 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/lily.png" width="100%"/>
+                                    <img src="arts/speed_recovery.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>1-3x Water Lily</h4>
+                                    <h4>0x Speed Recovery</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="card spell border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedlift.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Speedlift</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card spell border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_scratch.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Scratch</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card spell border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_wheel.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Wheel</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-5">
                     <div class="card trap border-dark">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/calling.png" width="100%"/>
+                                    <img src="arts/dice_roll_battle.png" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>0x Calling</h4>
+                                    <h4>0x Dice Roll Battle</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -307,498 +636,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/hollow.png" width="100%"/>
+                                    <img src="arts/re-dyce-cle.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>0x Hollow</h4>
-                                    <p>sample text</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="enginecontent" class="tabContent" style="display:none">
-            <div id="evolcontent" class="contentDiv">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <h3>Evol</h3>
-                        <p>evol time</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/lios.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1-3x Lios</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/megachirella.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Megachirella</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/misc.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Miscellaneousaurus</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/archo.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Archosaur</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card trap border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/singularity.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Evo-Singularity</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card xyz border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/lars.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Lars</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="border-3" id="hr1">
-            <div id="raikacontent" class="contentDiv">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <h3>Ragnaraika</h3>
-                        <p>raika time</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/seed.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>3x Seed</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/lizard.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Lizard</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/beetle.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Beetle</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/arco.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Butterfly</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card spell border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/bloom.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>3x Bloom</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card trap border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/da.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Dance</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card trap border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/wisteria.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Wisteria</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card linkm border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/skeletal.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Skeletal</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card linkm border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/mantis.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Mantis</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card linkm border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/snapper.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Snapper</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card linkm border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/coils.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Coils</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card linkm border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/stag.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Stag</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="border-3" id="hr2">
-            <div id="annecontent" class="contentDiv">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <h3>Reptilianne</h3>
-                        <p>reptilianne time</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/coatl.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-3x Coatl</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/lamia.jpg" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Lamia</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/nyami.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Nyami</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card mon border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/vaskii.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Vaskii</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card spell border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/ramifications.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>3x Ramifications</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card spell border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/recoil.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>1x Recoil</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card spell border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/spawn.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Spawn</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="card synchro border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/hydra.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Hydra</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card synchro border-dark">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/melusine.png" width="100%"/>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <h4>0-1x Melusine</h4>
-                                        <p>sample text</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="techcontent" class="tabContent" style="display:none">
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <h3>Techs</h3>
-                    <p>The non-archetypal stuff</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="card mon border-dark">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/nunu.png" width="100%"/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>3x Nunu</h4>
+                                    <h4>0x Re-dyce-cle</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -806,14 +647,239 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="card mon border-dark">
+                    <div class="card trap border-dark">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="images/nauya.jpg" width="100%"/>
+                                    <img src="arts/missing_art.jpg" width="100%"/>
                                 </div>
                                 <div class="col-lg-8">
-                                    <h4>3x Nauya</h4>
+                                    <h4>0x Clear Wing Wander</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card trap border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/speedroid_dupligate.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Dupligate</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card linkm border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_rubber_band_shooter.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Rubber Band Shooter</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_cork_shooter.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Cork Shooter</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_puzzle.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Puzzle</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_chanbara.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Chanbara</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/missing_art.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Glider-2</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_hagoita.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Hagoita</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_kendama.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Kendama</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/clear_wing_fast_dragon.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Clear Wing Fast</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/clear_wing_synchro_dragon.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Clear Wing Synchro</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/crystal_wing_synchro_dragon.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Crystal Wing</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_kitedrake.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Kitedrake</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/crystal_clear_wing_synchro_dragon.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Crystal Clear Wing</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/hi-speedroid_clear_wing_rider.png" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Clear Wing Rider</h4>
+                                    <p>sample text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card synchro border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="arts/missing_art.jpg" width="100%"/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h4>0x Crystal Clear Wing Over</h4>
                                     <p>sample text</p>
                                 </div>
                             </div>
@@ -822,7 +888,502 @@
                 </div>
             </div>
         </div>
-        <div id="listcontent" class="tabContent" style="display:none">
+        <div id="content_generics" class="tabContent" style="display:none">
+            <div id="content_g_main" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Techs</h3>
+                        <p>The non-archetypal stuff</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_g_extra" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Techs 2</h3>
+                        <p>negative space</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/nunu.png" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>3x Nunu</h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/nauya.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>3x Nauya</h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content_variants" class="tabContent" style="display:none">
+            <div id="content_v_dragon" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Armed Dragon</h3>
+                        <p>dragons</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_v_wasp" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Battlewasp</h3>
+                        <p>bees</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_v_magnet" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>KaijuMagnet</h3>
+                        <p>funny blind second</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_v_kash" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Kashtira</h3>
+                        <p>dead</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_v_symph" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Symphonic</h3>
+                        <p>alexa play clear mind</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_v_trap" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Trap</h3>
+                        <p>purple card go brr</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content_engines" class="tabContent" style="display:none">
+            <div id="content_e_gunity" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Dragunity</h3>
+                        <p>dragons but small</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_e_kash" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Kashtira</h3>
+                        <p>unicorn gaming</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_e_machina" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Machina</h3>
+                        <p>weird</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-3">
+            <div id="content_e_symph" class="contentDiv">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h3>Symphonic</h3>
+                        <p>more music to duel by</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mon border-dark">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="arts/missing_art.jpg" width="100%"/>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <h4>0x </h4>
+                                        <p>sample text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content_lists" class="tabContent" style="display:none">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <p>sample lists go here</p>
@@ -830,23 +1391,37 @@
                 </div>
             </div>
         </div>
-        <div id="combocontent" class="tabContent" style="display:none">
+        <div id="content_combos" class="tabContent" style="display:none">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <p>a bunch of various sample combo lines</p>
+                    <p>once these actually get figured out</p>
+                </div>
+            </div>
+        </div>
+        <div id="content_md" class="tabContent" style="display:none">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p>@quarion help</p>
+                </div>
+            </div>
+        </div>
+        <div id="content_discussions" class="tabContent" style="display:none">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p>figure out which of these are worth keeping and what new ones need to be added if any</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-dark">
             <div class="col-lg-5">
                 <span class="mb-3 mb-md-0 text-body-secondary">Created by Kataigis
                 <br>
-                <span class="mb-3 mb-md-0 text-body-secondary">Content gathered with help from the Ogdoadic Discord
+                <span class="mb-3 mb-md-0 text-body-secondary">Content gathered with help from the Speedroid Discord
             </div>
             <div class="col-lg-3 justify-content-center">
-                <span class="mb-3 mb-mb-0 text-body-secondary">Last updated:
+                <span class="mb-3 mb-mb-0 text-body-secondary">Last updated: 
             </div>
         </footer>
     </div>
