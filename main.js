@@ -110,3 +110,8 @@ function pageTransition(id) {
     document.getElementById(`btn_${id}`).classList.add("active");
     $(`#content_${id}`).fadeIn(600);
 }
+
+function swapcontent(id) {
+    $(`#${id}`).find(".rationale").toggle();
+    $(`#${id}`).find(".cardtext").toggle();
+}
