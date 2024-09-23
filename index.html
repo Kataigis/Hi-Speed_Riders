@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="mainjs.js"></script>
 </head>
 <body>
     <nav class="navbar sticky-top d-flex">
@@ -82,7 +82,6 @@
                             <ul>
                                 <li>ratios</li>
                                 <li>explanations</li>
-                                <li>card information pop-ups</li>
                             </ul>
                         </li>
                         <li>
@@ -93,7 +92,6 @@
                                     <ul>
                                         <li>ratios</li>
                                         <li>explanations</li>
-                                        <li>card info popups</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -101,7 +99,6 @@
                                     <ul>
                                         <li>ratios</li>
                                         <li>explanations</li>
-                                        <li>card info popups</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -152,14 +149,23 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('block-n-roll')" class="stretched-link"></a>
+                        <div class="card-body" id="block-n-roll">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_block-n-roll.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Block-n-Roll</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Block-n-Roll</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Effect 1000/1800
+                                        <br>
+                                        If this card is sent to the GY as Synchro Material: You can Special Summon 1 "Speedroid Token" (Machine/WIND/ATK 0/DEF 0) with a Level equal to the original Level of the Synchro Monster that used this card as material. You can only use this effect of "Speedroid Block-n-Roll" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -167,14 +173,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('carturbo')" class="stretched-link"></a>
+                        <div class="card-body" id="carturbo">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_carturbo.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x CarTurbo</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>2-3x CarTurbo</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid CarTurbo</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Tuner/Effect 800/1200
+                                        <br>
+                                        If you control a WIND monster: You can Special Summon this card from your hand, also you cannot activate monster effects for the rest of this turn, except WIND monsters. You can banish this card and 1 "Speedroid" monster from your GY; all WIND monsters you currently control gain 800 ATK until the end of this turn. You can only use each effect of "Speedroid CarTurbo" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -182,14 +197,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('clackernel')" class="stretched-link"></a>
+                        <div class="card-body" id="clackernel">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_clackernel.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Clackernel</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>3x Clackernel</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Clackernel</h4>
+                                    <p>
+                                        Lv2 WIND Machine/Pendulum/Effect 200/1800 Sc8
+                                        <br>
+                                        <b>P:</b> You can banish 1 "Speedroid" card from your GY; place 1 "Speedroid" Pendulum Monster from your Deck in your Pendulum Zone, also you cannot Special Summon for the rest of this turn, except WIND monsters. You can only use this effect of "Speedroid Clackernel" once per turn.
+                                        <br>
+                                        <b>M:</b> If this card on the field is destroyed by battle or card effect: You can Special Summon 1 "Speedroid Clackernel" from your hand, Deck, or GY as a Tuner. If your "Clear Wing" monster battles while this card is face-up in your Extra Deck, during damage calculation: You can banish this card, and if you do, that monster gains 700 ATK. You can only use each monster effect of "Speedroid Clackernel" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -197,14 +223,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('daiko')" class="stretched-link"></a>
+                        <div class="card-body" id="daiko">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_den-den_daiko_duke.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Den-Den Daiko Duke</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1-2x Daiko Duke</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Den-Den-Daiko Duke</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Tuner/Effect 1000/1000
+                                        <br>
+                                        You can banish this card from your GY; Special Summon 1 "Speedroid" Tuner from your hand or GY, except "Speedroid Den-Den Daiko Duke". You can only use this effect of "Speedroid Den-Den Daiko Duke" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -212,14 +247,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('domino')" class="stretched-link"></a>
+                        <div class="card-body" id="domino">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_dominobutterfly.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Dominobutterfly</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Dominobutterfly</h4>
+                                    <p>
+                                        Lv2 WIND Machine/Pendulum/Tuner/Effect 100/300 Sc8
+                                        <br>
+                                        <b>P:</b> You cannot Pendulum Summon monsters, except WIND monsters. This effect cannot be negated. You can discard 1 WIND monster, then target 1 of your banished WIND monsters; add it to your hand. You can only use this effect of "Speedroid Dominobutterfly" once per turn.
+                                        <br>
+                                        <b>M:</b> Cannot be used as a Synchro Material, except for the Synchro Summon of a WIND Dragon or Machine-Type Synchro Monster. If this card, Special Summoned from the Extra Deck, is used as a Material for a Synchro Summon, banish it.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -227,14 +273,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('yoyo')" class="stretched-link"></a>
+                        <div class="card-body" id="yoyo">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_double_yoyo.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Double Yoyo</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-1x Yoyo</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Double Yoyo</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Effect 1400/1400
+                                        <br>
+                                        When this card is Normal Summoned: You can target 1 Level 3 or lower "Speedroid" monster in your GY; Special Summon it.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -242,14 +297,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('piper')" class="stretched-link"></a>
+                        <div class="card-body" id="piper">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_fuki-modoshi_piper.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Fuki-Modoshi Piper</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-1x Piper</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Fuki-Modoshi Piper</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Tuner/Effect 1000/1000
+                                        <br>
+                                        If this card is Normal or Special Summoned: You can excavate cards from the top of your Deck equal to the number of other WIND monsters you control, add 1 excavated card to your hand, also place the rest on the bottom of your Deck in any order. You can banish this card from your GY, then target 1 Level 3 or higher WIND monster you control; reduce its Level by 2. You can only use each effect of "Speedroid Fuki-Modoshi Piper" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -257,14 +321,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('gum')" class="stretched-link"></a>
+                        <div class="card-body" id="gum">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_gum_prize.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Gum Prize</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Gum Prize</h4>
+                                    <p>
+                                        Lv1 WIND Machine/Tuner/Effect 0/800
+                                        <br>
+                                        During the Battle Phase, if you take battle or effect damage: You can Special Summon this card from your hand. During either player's Battle Phase in which this card was Special Summoned by its effect, you can: Immediately after this effect resolves, Synchro Summon 1 Synchro Monster, using only WIND monsters you control, including this card. If this card is sent to the Graveyard as a Synchro Material: You can send the top card of your Deck to the Graveyard, and if the sent card was a "Speedroid" monster, the Synchro Monster that used this card as Synchro Material gains 1000 ATK.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -272,14 +345,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('hexasaucer')" class="stretched-link"></a>
+                        <div class="card-body" id="hexasaucer">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_hexasaucer.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Hexasaucer</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Hexasaucer</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Pendulum/Effect 100/1600 Sc6
+                                        <br>
+                                        <b>P:</b> You can target 1 of your WIND Synchro Monsters that is banished or in your GY; return it to the Extra Deck. You can only use this effect of "Speedroid Hexasaucer" once per turn.
+                                        <br>
+                                        <b>M:</b> Both players take any battle damage from attacks involving this card. Any battle damage from battles involving this card is halved. If this card is destroyed in the Pendulum Zone: You can Special Summon 1 face-up "Speedroid" Pendulum Monster from your Extra Deck.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -287,14 +371,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('stilts')" class="stretched-link"></a>
+                        <div class="card-body" id="stilts">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_horse_stilts.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Horse Stilts</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Horse Stilts</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Effect 1100/1100
+                                        <br>
+                                        When this card is Normal Summoned: You can Special Summon 1 Level 4 or lower "Speedroid" monster from your hand. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY; send 1 WIND monster from your Deck to the GY. You can only use this effect of "Speedroid Horse Stilts" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -302,14 +395,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('magnet')" class="stretched-link"></a>
+                        <div class="card-body" id="magnet">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_maliciousmagnet.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Maliciousmagnet</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Maliciousmagnet</h4>
+                                    <p>
+                                        Lv1 WIND Machine/Tuner/Effect 0/0
+                                        <br>
+                                        Cannot be used as Synchro Material except for a Synchro Summon by its own effect. During your Main Phase, if this card is Normal or Special Summoned: You can target 1 face-up monster your opponent controls; immediately after this effect resolves, Synchro Summon 1 WIND Synchro Monster using only this card you control and that monster. You can only use this effect of "Speedroid Maliciousmagnet" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -317,14 +419,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('marble')" class="stretched-link"></a>
+                        <div class="card-body" id="marble">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_marble_machine.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Marble Machine</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>3x Marble</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Marble Machine</h4>
+                                    <p>
+                                        Lv2 WIND Machine/Pendulum/Effect 200/100 Sc1
+                                        <br>
+                                        <b>P:</b> Once per turn, when your Defense Position monster is targeted for an attack: You can change it to face-up Attack Position, also it cannot be destroyed by battle this turn (even if this card leaves the field).
+                                        <br>
+                                        <b>M:</b> When this card is Normal Summoned: You can activate this effect; add 1 "Speedroid" monster from your Deck to your hand, also you cannot Special Summon monsters for the rest of this turn, except WIND monsters. You can only use this effect of "Speedroid Marble Machine" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -332,14 +445,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('menko')" class="stretched-link"></a>
+                        <div class="card-body" id="menko">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_menko.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Menko</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Menko</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Effect 100/2000
+                                        <br>
+                                        When an opponent's monster declares a direct attack while this card is in your hand: You can Special Summon this card in Attack Position, and if you do, change all face-up monsters your opponent controls to Defense Position.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -347,14 +469,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('ohajikid')" class="stretched-link"></a>
+                        <div class="card-body" id="ohajikid">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_ohajikid.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Ohajikid</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Ohajikid</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Effect 1000/200
+                                        <br>
+                                        When this card is Normal Summoned: You can target 1 Tuner monster in either player's Graveyard; Special Summon it to your side of the field, and if you do, immediately after this effect resolves, Synchro Summon 1 WIND Synchro Monster, using that monster and this card only.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -362,14 +493,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('pachingo')" class="stretched-link"></a>
+                        <div class="card-body" id="pachingo">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_pachingo-kart.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Pachingo-Kart</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Pachingo-Kart</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Effect 1800/1000
+                                        <br>
+                                        Once per turn: You can discard 1 Machine-Type monster, then target 1 monster on the field; destroy it.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -377,14 +517,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('glider')" class="stretched-link"></a>
+                        <div class="card-body" id="glider">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_passinglider.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Passinglider</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Passinglider</h4>
+                                    <p>
+                                        Lv5 WIND Machine/Pendulum/Effect 2200/2000 Sc3
+                                        <br>
+                                        <b>P:</b> Once per turn: You can send 1 "Speedroid" Tuner from your hand or face-up from your field to the GY; increase or reduce (min. 1) this card's Pendulum Scale by the original Level of the sent monster until the end of this turn.
+                                        <br>
+                                        <b>M:</b> If there are no monsters on the field, you can Special Summon this card (from your hand). You can only Special Summon "Speedroid Passinglider" once per turn this way. When this card is Tribute Summoned: You can target 1 Level 4 or lower "Speedroid" monster in your GY; Special Summon it. Your opponent's monsters cannot target "Speedroid" monsters for attacks, except this one.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -392,14 +543,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('razorang')" class="stretched-link"></a>
+                        <div class="card-body" id="razorang">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_razorang.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Razorang</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Razorang</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Effect 2000/0
+                                        <br>
+                                        Cannot attack the turn it is Normal Summoned. Once per turn: You can target 1 face-up monster on the field; change this card to Defense Position, and if you do, that target loses 800 ATK until the end of this turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -407,14 +567,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('redice')" class="stretched-link"></a>
+                        <div class="card-body" id="redice">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_red-eyed_dice.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Red-Eyed Dice</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1x Red-Eyed Dice</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Red-Eyed Dice</h4>
+                                    <p>
+                                        Lv1 WIND Machine/Tuner/Effect 100/100
+                                        <br>
+                                        When this card is Normal or Special Summoned: You can target 1 "Speedroid" monster you control, except "Speedroid Red-Eyed Dice", and declare a Level from 1 to 6; it becomes that Level until the end of this turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -422,14 +591,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('plane')" class="stretched-link"></a>
+                        <div class="card-body" id="plane">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_rubberband_plane.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Rubberband Plane</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-1x Rubberband Plane</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Rubberband Plane</h4>
+                                    <p>
+                                        Lv5 WIND Machine/Effect 1800/0
+                                        <br>
+                                        If a monster is Special Summoned to your field (except during the Damage Step): You can Special Summon this card from your hand, also you cannot Special Summon monsters for the rest of this turn, except WIND monsters. You can only use this effect of "Speedroid Rubberband Plane" once per turn. If this card is Normal or Special Summoned: You can target 1 face-up monster on the field; it loses 600 ATK until the end of this turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -437,14 +615,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('skull')" class="stretched-link"></a>
+                        <div class="card-body" id="skull">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_skull_marbles.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Skull Marbles</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Skull Marbles</h4>
+                                    <p>
+                                        Lv7 WIND Machine/Effect 0/3000
+                                        <br>
+                                        Once per turn, during the Standby Phase, if your opponent controls a face-up monster that was Special Summoned from the Extra Deck: You can Special Summon this card from your hand. Cannot be destroyed by battle with a Normal Summoned/Set monster. Your opponent takes any battle damage you would have taken from battles involving this card. You can only use this effect of "Speedroid Skull Marbles" once per turn. If you control a face-up monster that is not a "Speedroid" monster, destroy this card.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -452,14 +639,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('tak')" class="stretched-link"></a>
+                        <div class="card-body" id="tak">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_taketomborg.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Taketomborg</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>3x Taketomborg</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Taketomborg</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Effect 600/1200
+                                        <br>
+                                        If you control a WIND monster, you can Special Summon this card (from your hand). You can Tribute this card; Special Summon 1 "Speedroid" Tuner from your Deck, also you cannot Special Summon monsters for the rest of this turn, except WIND monsters. You can only Special Summon "Speedroid Taketomborg(s)" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -467,14 +663,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('ttop')" class="stretched-link"></a>
+                        <div class="card-body" id="ttop">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_terrortop.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Terrortop</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>3x Terrortop</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Terrortop</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Effect 1200/600
+                                        <br>
+                                        If you control no monsters, you can Special Summon this card (from your hand). When this card is Normal or Special Summoned: You can add 1 "Speedroid" monster from your Deck to your hand, except "Speedroid Terrortop". You can only use this effect of "Speedroid Terrortop" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -482,14 +687,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('trieyed')" class="stretched-link"></a>
+                        <div class="card-body" id="trieyed">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_tri-eyed_dice.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Tri-Eyed Dice</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Tri-Eyed Dice</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Tuner/Effect 300/1500
+                                        <br>
+                                        During your opponent's turn: You can banish this card from your Graveyard; negate the next attack this turn from a monster your opponent controls (this is a Quick Effect).
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -497,14 +711,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('hound')" class="stretched-link"></a>
+                        <div class="card-body" id="hound">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_ultra_hound.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Ultra Hound</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>2-3x Ultra Hound</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Ultra Hound</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Effect 800/800
+                                        <br>
+                                        When this card is Normal Summoned: You can send 1 "Speedroid" card from your Deck to the GY. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY, then target 1 "Speedroid" monster in your GY; shuffle it into the Deck, and if you do, Special Summon 1 "Speedroid" Synchro Monster from your Extra Deck with the same Level but a different name, but negate its effects. You can only use this effect of "Speedroid Ultra Hound" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -512,14 +735,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card mon border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('wingsync')" class="stretched-link"></a>
+                        <div class="card-body" id="wingsync">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_wing_synchron.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Wing Synchron</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1x Wing Synchron</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Wing Synchron</h4>
+                                    <p>
+                                        Lv5 WIND Machine/Pendulum/Effect 1500/1000 Sc4
+                                        <br>
+                                        <b>P:</b> Once per turn: You can destroy both this card and 1 Level 2 WIND Pendulum Monster Card in your Pendulum Zone, and if you do, Special Summon 1 "Clear Wing Synchro Dragon" from your Extra Deck (this is treated as a Synchro Summon), also, for the rest of this turn, cards in your Pendulum Zone cannot be destroyed by card effects, also you cannot Special Summon, except WIND monsters.
+                                        <br>
+                                        <b>M:</b> If this card is added to the Extra Deck face-up and there are 2 or more different Monster Types among the WIND Synchro Monsters you control: You can send 1 "Speedroid" Spell/Trap from your Deck to the GY. You can only use this effect of "Speedroid Wing Synchron" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -527,14 +761,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card spell border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('relevel')" class="stretched-link"></a>
+                        <div class="card-body" id="relevel">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speed_re-level.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Hi-Speed Re-Level</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speed Re-Level</h4>
+                                    <p>
+                                        Normal Spell
+                                        <br>
+                                        Banish 1 "Speedroid" monster from your Graveyard, then target 1 Synchro Monster you control; until the end of this turn, change its Level to the banished monster's Level, and it gains ATK equal to that monster's Level x 500.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -542,14 +785,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card spell border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('shock')" class="stretched-link"></a>
+                        <div class="card-body" id="shock">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/shock_surprise.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Shock Surprise</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Shock Surprise</h4>
+                                    <p>
+                                        Normal Spell
+                                        <br>
+                                        Banish up to 2 "Speedroid" monsters from your Graveyard, then target that many cards on the field; destroy them.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -557,14 +809,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card spell border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('recovery')" class="stretched-link"></a>
+                        <div class="card-body" id="recovery">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speed_recovery.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Speed Recovery</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-3x Speed Recovery</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speed Recovery</h4>
+                                    <p>
+                                        Normal Spell
+                                        <br>
+                                        Target 1 "Speedroid" monster in your GY; Special Summon it. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY, then target 1 "Speedroid" monster in your GY; add it to your hand.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -572,14 +833,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card spell border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('speedlift')" class="stretched-link"></a>
+                        <div class="card-body" id="speedlift">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedlift.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Speedlift</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedlift</h4>
+                                    <p>
+                                        Quick-Play Spell
+                                        <br>
+                                        If you control exactly 1 Tuner and no other monsters: Special Summon 1 Level 4 or lower "Speedroid" monster from your Deck. Neither player can activate cards or effects when that monster is Special Summoned.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -587,14 +857,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card spell border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('scratch')" class="stretched-link"></a>
+                        <div class="card-body" id="scratch">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_scratch.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Scratch</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1-3x Scratch</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Scratch</h4>
+                                    <p>
+                                        Normal 
+                                        <br>
+                                        Send 1 "Speedroid" card from your hand to the GY; add 1 "Speedroid" monster from your Deck to your hand. You can only activate 1 "Speedroid Scratch" per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -602,14 +881,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card spell border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('wheel')" class="stretched-link"></a>
+                        <div class="card-body" id="wheel">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_wheel.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Wheel</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-3x Wheel</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Wheel</h4>
+                                    <p>
+                                        Quick-Play Spell
+                                        <br>
+                                        Discard 1 card; roll a six-sided die, then Special Summon, from your hand and/or Deck, 1 or 2 "Speedroid" monsters whose total Levels equal the result, but negate their effects. If you do not Special Summon, you lose LP equal to the result x 500. You can only activate 1 "Speedroid Wheel" per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -617,14 +905,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card trap border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('dicebattle')" class="stretched-link"></a>
+                        <div class="card-body" id="dicebattle">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/dice_roll_battle.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Dice Roll Battle</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Dice Roll Battle</h4>
+                                    <p>
+                                        Normal Trap
+                                        <br>
+                                        When an opponent's monster declares an attack: Target 1 "Speedroid" monster in your Graveyard; banish both it and 1 "Speedroid" Tuner monster in your hand, and if you do, Special Summon from your Extra Deck, 1 Synchro Monster whose Level equals the total original Levels of those 2 monsters. During your opponent's Battle Step: You can banish this card from your Graveyard, then target 1 face-up Attack Position Synchro Monster on each side of the field; make that face-up Attack Position monster your opponent controls attack that monster you control, and perform damage calculation.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -632,14 +929,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card trap border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('redyce')" class="stretched-link"></a>
+                        <div class="card-body" id="redyce">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/re-dyce-cle.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Re-dyce-cle</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Re-dyce-cle</h4>
+                                    <p>
+                                        Normal Trap
+                                        <br>
+                                        Target 1 "Speedroid" Tuner monster in your Graveyard; Special Summon it, but its effects are negated, also roll a six-sided die, and its Level becomes the result until the end of this turn. You can banish this card from your Graveyard; immediately after this effect resolves, Synchro Summon 1 WIND Synchro Monster, using monsters you control including a "Speedroid" Tuner monster.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -647,14 +953,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card trap border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('wander')" class="stretched-link"></a>
+                        <div class="card-body" id="wander">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_clear_wing_wonder.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Clear Wing Wander</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-1x Clear Wing Wander</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Clear Wing Wander</h4>
+                                    <p>
+                                        Normal Trap
+                                        <br>
+                                        Target cards your opponent controls up to the number of different Monster Types among the WIND Synchro Monsters you control; destroy them. If your opponent Special Summons a monster(s): You can banish this card from your GY, then target 1 WIND Synchro Monster you control; banish it, then return it to the field. You can only use this effect of "Speedroid Clear Wing Wander" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -662,14 +977,23 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card trap border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('dupligate')" class="stretched-link"></a>
+                        <div class="card-body" id="dupligate">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/speedroid_dupligate.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Dupligate</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1x Dupligate</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Speedroid Dupligate</h4>
+                                    <p>
+                                        Normal Trap
+                                        <br>
+                                        Banish 1 WIND monster from your GY, then target 1 card your opponent controls; return it to the hand. During your Main Phase, if this card is in your GY: You can target 1 Level 2 or higher "Speedroid" monster you control; reduce its Level by 1, and if you do, Special Summon this card as a Normal Monster (Machine/Tuner/WIND/Level 1/ATK 0/DEF 0). (This card is NOT treated as a Trap.) You can only use this effect of "Speedroid Dupligate" once per Duel.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -677,14 +1001,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card linkm border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('rbs')" class="stretched-link"></a>
+                        <div class="card-body" id="rbs">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_rubber_band_shooter.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Rubber Band Shooter</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1-2x Rubber Band Shooter</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Rubber Band Shooter</h4>
+                                    <p>
+                                        Link-2 WIND Machine/Link/Effect 1000 DL/DR
+                                        <br>
+                                        2 WIND monsters
+                                        <br>
+                                        During your Main Phase, you can: Immediately after this effect resolves, Normal Summon 1 WIND monster, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters. You can banish 1 WIND Synchro Monster from your Extra Deck; reveal 2 "Speedroid" monsters with different names from your Deck whose total Levels equal the Level of that Synchro Monster, your opponent randomly picks 1 for you to add to your hand, and you send the other to the GY. You can only use each effect of "Hi-Speedroid Rubber Band Shooter" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -692,14 +1027,31 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('cork')" class="stretched-link"></a>
+                        <div class="card-body" id="cork">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_cork_shooter.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Cork Shooter</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>2x Cork Shooter</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Cork Shooter</h4>
+                                    <p>
+                                        Lv3 WIND Machine/Synchro/Tuner/Effect 500/1000
+                                        <br>
+                                        1 Tuner + 1+ non-Tuner monsters
+                                        <br>
+                                        If this card is Synchro Summoned: You can activate 1 of these effects;
+                                        <br>
+                                        ● Add 1 "Speedroid" Spell/Trap from your Deck to your hand.
+                                        <br>
+                                        ● If all materials that were used for the Synchro Summon of this card were "Speedroid" monsters, and are all in your GY, Special Summon all of them.
+                                        <br>
+                                        You cannot Special Summon monsters the turn you activate this effect, except WIND monsters. You can only use this effect of "Hi-Speedroid Cork Shooter" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -707,14 +1059,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('puzzle')" class="stretched-link"></a>
+                        <div class="card-body" id="puzzle">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_puzzle.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Puzzle</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-1x Puzzle</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Puzzle</h4>
+                                    <p>
+                                        Lv4 WIND Machine/Synchro/Effect 1300/1600
+                                        <br>
+                                        1 Tuner + 1 or more non-Tuner monsters
+                                        <br>
+                                        At the start of the Damage Step, if this card battles a Special Summoned monster: You can make this card's ATK become double its current ATK until the end of the Damage Step. Once per turn, during the End Phase, if this card is in the Graveyard because this Synchro Summoned card was sent there from the field this turn: You can target 1 "Speedroid" monster in your Graveyard, except "Hi-Speedroid Puzzle"; add it to your hand.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -722,14 +1085,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('chanbara')" class="stretched-link"></a>
+                        <div class="card-body" id="chanbara">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_chanbara.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Chanbara</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-1x Chanbara</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Chanbara</h4>
+                                    <p>
+                                        Lv5 WIND Machine/Synchro/Effect 2000/1000
+                                        <br>
+                                        1 Tuner + 1+ non-Tuner monsters
+                                        <br>
+                                        This card can make a second attack during each Battle Phase. At the start of the Damage Step, if this card battles: It gains 200 ATK. If this card is sent to the GY: You can target 1 of your banished "Speedroid" cards; add it to your hand. You can only Special Summon "Hi-Speedroid Chanbara(s)" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -737,14 +1111,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('glider2')" class="stretched-link"></a>
+                        <div class="card-body" id="glider2">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_glider-2.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Glider-2</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1-2x Glider-2</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Glider-2</h4>
+                                    <p>
+                                        Lv5 WIND Machine/Synchro/Tuner/Effect 1600/2200
+                                        <br>
+                                        1 WIND Machine Tuner + 1+ non-Tuner monsters
+                                        <br>
+                                        If this card is Synchro Summoned: You can target 1 non-Tuner Level 7 or lower WIND Synchro Monster in your GY; Special Summon it. If your opponent Special Summons a monster(s) and you control a "Clear Wing" monster: You can banish this card from your GY; increase the Levels of all face-up monsters your opponent currently controls by 5. You can only use each effect of "Hi-Speedroid Glider 2" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -752,14 +1137,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('hagoita')" class="stretched-link"></a>
+                        <div class="card-body" id="hagoita">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_hagoita.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Hagoita</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1x Hagoita</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Hagoita</h4>
+                                    <p>
+                                        Lv5 WIND Machine/Synchro/Effect 2000/1000
+                                        <br>
+                                        1 Tuner + 1 or more non-Tuner monsters
+                                        <br>
+                                        During either player's turn: You can Tribute this card; increase the Levels of all monsters currently on the field by 1, until the end of this turn. If this card is in your Graveyard and you control a "Speedroid" Tuner monster: You can Special Summon this card, also you cannot Special Summon monsters for the rest of this turn, except WIND monsters. You can only use this effect of "Hi-Speedroid Hagoita" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -767,14 +1163,29 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('kendama')" class="stretched-link"></a>
+                        <div class="card-body" id="kendama">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_kendama.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 rationale">
                                     <h4>0x Kendama</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Kendama</h4>
+                                    <p>
+                                        Lv6 WIND Machine/Synchro/Effect 2200/1600
+                                        <br>
+                                        1 Tuner + 1 or more non-Tuner monsters
+                                        <br>
+                                        If this card attacks a Defense Position monster, inflict piercing battle damage to your opponent. You can only use each of the following effects of "Hi-Speedroid Kendama" once per turn.
+                                        <br>
+                                        ● You can banish 1 Machine-Type monster from your Graveyard; inflict 500 damage to your opponent.
+                                        <br>
+                                        ● If this card is in your Graveyard and you control no cards: You can Special Summon this card. You cannot Normal Summon/Set the turn you activate this effect.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -782,14 +1193,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('fast')" class="stretched-link"></a>
+                        <div class="card-body" id="fast">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/clear_wing_fast_dragon.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Clear Wing Fast</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1x Clear Wing Fast</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Clear Wing Fast Dragon</h4>
+                                    <p>
+                                        Lv7 WIND Dragon/Synchro/Pendulum/Effect 2500/2000 Sc4
+                                        <br>
+                                        <b>P:</b> You can send 1 face-up "Speedroid" Tuner and 1 face-up non-Tuner monster you control to the GY, whose total Levels equal 7; Special Summon this card from your Pendulum Zone. You can only use this effect of "Clear Wing Fast Dragon" once per turn.
+                                        <br>
+                                        <b>M:</b> (Quick Effect): You can target 1 face-up monster your opponent controls that was Special Summoned from the Extra Deck; until the end of this turn, change its ATK to 0, also negate that face-up monster's effects. You can only use this effect of "Clear Wing Fast Dragon" once per turn. If this card in the Monster Zone is destroyed by battle or card effect: You can place this card in your Pendulum Zone.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -797,14 +1219,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('clear')" class="stretched-link"></a>
+                        <div class="card-body" id="clear">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/clear_wing_synchro_dragon.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Clear Wing Synchro</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1-2x Clear Wing Synchro</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Clear Wing Synchro Dragon</h4>
+                                    <p>
+                                        Lv7 WIND Dragon/Synchro/Effect 2500/2000
+                                        <br>
+                                        1 Tuner + 1+ non-Tuner monsters
+                                        <br>
+                                        Once per turn, when another Level 5 or higher monster activates its effect on the field (Quick Effect): You can negate the activation, and if you do, destroy it. Once per turn, when a monster effect is activated that targets 1 Level 5 or higher monster on the field (and no other cards) (Quick Effect): You can negate the activation, and if you do, destroy it. If this card's effect destroys a monster, this card gains ATK equal to the destroyed monster's original ATK until the end of this turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -812,14 +1245,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('crystal')" class="stretched-link"></a>
+                        <div class="card-body" id="crystal">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/crystal_wing_synchro_dragon.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Crystal Wing</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1-2x Crystal Wing</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Crystal Wing Synchro Dragon</h4>
+                                    <p>
+                                        Lv8 WIND Dragon/Synchro/Effect 3000/2500
+                                        <br>
+                                        1 Tuner + 1+ non-Tuner Synchro Monsters
+                                        <br>
+                                        Once per turn, when another monster's effect is activated (Quick Effect): You can negate the activation, and if you do, destroy that monster, and if you do that, this card gains ATK equal to the destroyed monster's original ATK until the end of this turn. If this card battles an opponent's Level 5 or higher monster, during damage calculation: This card gains ATK equal to the current ATK of the opponent's monster it is battling during that damage calculation only.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -827,14 +1271,31 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('kite')" class="stretched-link"></a>
+                        <div class="card-body" id="kite">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_kitedrake.jpg" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Kitedrake</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1x Kitedrake</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Kitedrake</h4>
+                                    <p>
+                                        Lv8 WIND Machine/Effect 3000/2800
+                                        <br>
+                                        1 WIND Machine Tuner + 1+ non-Tuner monsters
+                                        <br>
+                                        If this card is Synchro Summoned: You can activate 1 of these effects;
+                                        <br>
+                                        ● Destroy all other cards on the field.
+                                        <br>
+                                        ● Negate the effects of all face-up cards your opponent currently controls.
+                                        <br>
+                                        If this card in your possession is sent to your GY by an opponent's card: You can add 1 "Speedroid" monster from your Deck to your hand. You can only use each effect of "Hi-Speedroid Kitedrake" once per turn.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -842,14 +1303,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('ccw')" class="stretched-link"></a>
+                        <div class="card-body" id="ccw">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/crystal_clear_wing_synchro_dragon.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Crystal Clear Wing</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1x Crystal Clear Wing</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Crystal Clear Wing Synchro Dragon</h4>
+                                    <p>
+                                        Lv10 WIND Dragon/Synchro/Effect 3000/2500
+                                        <br>
+                                        1 Tuner Synchro Monster + 1 non-Tuner "Clear Wing" monster
+                                        <br>
+                                        Once per turn, when your opponent activates a monster effect (except during the Damage Step) (Quick Effect): You can activate this effect; until the end of this turn, this face-up card is unaffected by the activated effects of your opponent's monsters, also this card gains ATK equal to that opponent's monster's original ATK. Once per turn, when a Spell/Trap Card or effect is activated (Quick Effect): You can negate the activation, and if you do, destroy that card. If this Synchro Summoned card you control is sent to your GY by an opponent's card: You can add 1 WIND monster from your Deck to your hand.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -857,14 +1329,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('rider')" class="stretched-link"></a>
+                        <div class="card-body" id="rider">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/hi-speedroid_clear_wing_rider.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Clear Wing Rider</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>0-1x Clear Wing Rider</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Hi-Speedroid Clear Wing Rider</h4>
+                                    <p>
+                                        Lv11 WIND Machine/Synchro/Effect 3500/2000
+                                        <br>
+                                        1 WIND Tuner + 1 non-Tuner WIND Synchro Monster
+                                        <br>
+                                        Once per turn, during your Main Phase: You can roll a six-sided die and shuffle WIND monsters from your GY into your Deck, up to the result, then, you can destroy cards your opponent controls up to the number shuffled, and if you do, this card gains 500 ATK for each card destroyed by this effect, until the end of this turn. During your opponent's Main Phase (Quick Effect): You can Tribute this Synchro Summoned card; Special Summon up to 2 Level 7 WIND Synchro Monsters with different names from each other from your Extra Deck.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -872,14 +1355,25 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="card synchro border-dark">
-                        <div class="card-body">
+                        <a href="javascript:swapcontent('over')" class="stretched-link"></a>
+                        <div class="card-body" id="over">
                             <div class="row">
                                 <div class="col-lg-4">
                                     <img src="arts/crystal_clear_wing_over_synchro_dragon.png" width="100%"/>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>0x Crystal Clear Wing Over</h4>
+                                <div class="col-lg-8 rationale">
+                                    <h4>1-2x Clear Wing Over</h4>
                                     <p>sample text</p>
+                                </div>
+                                <div class="col-lg-8 cardtext" style="display:none">
+                                    <h4>Crystal Clear Wing Over Synchro Dragon</h4>
+                                    <p>
+                                        Lv12 WIND Dragon/Synchro/Effect 3500/3000
+                                        <br>
+                                        2+ Tuners or 1 Tuner Synchro Monster + "Clear Wing Synchro Dragon"
+                                        <br>
+                                        Must be Synchro Summoned. Once per turn, when another card or effect is activated (Quick Effect): You can negate the activation, and if you do, destroy that card, and if it was a monster, this card gains ATK equal to that monster's original ATK until the end of this turn. If this face-up Synchro Summoned card in its owner's control leaves the field by your opponent: You can Special Summon 1 "Clear Wing" monster from your Extra Deck.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1420,7 +1914,7 @@
                 <span class="mb-3 mb-md-0 text-body-secondary">Content gathered with help from the Speedroid Discord
             </div>
             <div class="col-lg-3 justify-content-center">
-                <span class="mb-3 mb-mb-0 text-body-secondary">Last updated: 
+                <span class="mb-3 mb-mb-0 text-body-secondary">Last updated: Sept 20, 2024
             </div>
         </footer>
     </div>
