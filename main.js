@@ -1,4 +1,25 @@
-$(document).ready(function () {
+document.addEventListener('shown.bs.tab', function (event) {
+    const newTab = event.target;
+    const tabContentWrapper = newTab.closest('.card').querySelector('.tab-content-wrapper');
+    const activePaneId = newTab.getAttribute('data-bs-target');
+    const activePane = document.querySelector(activePaneId);
+    const currentHeight = tabContentWrapper.offsetHeight;
+    tabContentWrapper.style.height = `${currentHeight}px`;
+    tabContentWrapper.offsetHeight;
+    const newHeight = activePane.offsetHeight;
+    tabContentWrapper.style.height = `${newHeight}px`;
+});
+  
+window.addEventListener('load', function () {
+    document.querySelectorAll('.tab-content-wrapper').forEach(wrapper => {
+        const activePane = wrapper.querySelector('.tab-pane.active');
+        if (activePane) {
+            wrapper.style.height = `${activePane.offsetHeight}px`;
+        }
+    });
+});
+
+/*$(document).ready(function () {
     document.getElementById("btn_home").addEventListener('click', function () {
         pageTransition("home");
     });
@@ -114,4 +135,4 @@ function pageTransition(id) {
 function swapcontent(id) {
     $(`#${id}`).find(".rationale").toggle();
     $(`#${id}`).find(".cardtext").toggle();
-}
+}*/
