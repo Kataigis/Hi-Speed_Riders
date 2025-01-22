@@ -88,7 +88,7 @@ nav {
     margin-bottom: 5px;
 }
 .green-tabs .nav-link.active {
-    background-color: #5fef77;
+    background-color: #65f6c8;
     border: 1px solid #5fef77;
     color: black;
 }
@@ -169,4 +169,17 @@ h3 {
 .tab-content {
     display: flex;
     flex-direction: column;
+}
+
+table, th, td {
+    border: 2px solid #313031;
+    border-collapse: collapse;
+}
+table {
+    table-layout: fixed;
+    width:100%;
+}
+th, td {
+    text-align: center;
+    padding: 15px;
 }
